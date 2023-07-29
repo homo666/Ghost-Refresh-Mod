@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "Ghost-Refresh-Mod",
+  "version": "${version}",
+
+  "name": "Sorsa No-CrystalLag",
+  "description": "Stops crystals from lagging your game",
+  "authors": [
+    "homo666"
+  ],
+  "contact": {
+    "homepage": "https://github.com/homo666"
+  },
+
+  "icon": "assets/norefresh/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "walksy.anticrystalrefresh.WalksyAntiCrystalRefresh"
+    ]
+  },
+
+  "mixins": [
+    "anticrystalrefresh.mixins.json"
+  ],
+
+  "depends": {
+    "midnightlib": "*"
+  }
+}
